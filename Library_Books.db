@@ -1,0 +1,13 @@
+Table: Books
+Rows: 5
+Columns: 2
+
+Column Names: Author Pages 
+Column Types: s i 
+
+Data:
+Albert 0 
+Einstein 450 
+Stephen 0 
+Hawking 500 
+Ruskin 0 
