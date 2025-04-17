@@ -32,59 +32,6 @@ struct Table {
     char column_types[MAX_COLS];
 };
 
-struct Book {
-    char title[50];
-    char author[50];
-    int available;
-    char due_date[20];
-};
-
-struct Train {
-    char name[50];
-    int number;
-    char time[20];
-    char date[20];
-    char location[50];
-};
-
-struct Ticket {
-    char personal_id[20];
-    char train_name[50];
-    float ticket_price;
-};
-
-struct Contact {
-    char name[50];
-    char phone[20];
-    char email[50];
-    char address[100];
-};
-
-struct Office {
-    char department[50];
-    char employee_name[50];
-    char position[50];
-    float salary;
-    char join_date[20];
-};
-
-struct Student {
-    char name[50];
-    int roll_number;
-    char course[50];
-    char department[50];
-    float cgpa;
-    char admission_date[20];
-};
-
-// Define Student Structure
-typedef struct {
-    int roll;
-    char name[50];
-    char course[50];
-    float marks;
-} Student;
-
 // Function Prototypes
 void encrypt(char *str, int key);
 void decrypt(char *str, int key);
@@ -98,26 +45,10 @@ int create_database(void);
 int access_database(void);
 void Delete_Database(void);
 void Table_sorting(void);
-void Student_Management(void);
-void Library_Management(void);
-void Ticket_Management(void);
-void Employee_Management(void);
-void Book_Management(void);
-void Movie_Management(void);
-void Music_Management(void);
-void Restaurant_Management(void);
-void Hotel_Management(void);
-void Car_Management(void);
-void Contact_Management(void);
-int pre_made_libraries(void);
-void sort_table(struct Table *table, int column_index, int ascending);
-void display_sorted_table(struct Table *table);
-void test_table_sorting(void);
 void Modify_Table(void);
 void create_table_in_database(char *database_name);
 int show_tables_in_database(char *database_name);
 void modify_existing_table(char *database_name);
-void Office_Management(void);
 void display_table_data(char *database_name);
 void sort_table_in_database(char *database_name);
 void display_zron_logo();
